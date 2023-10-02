@@ -14,5 +14,5 @@ int main(){
             }
         }
     }
-    printf("A soma dos termos abaixo da diagonal principal é %d",soma);
+    printf("A soma dos termos acima da diagonal principal é %d",soma);
 }
