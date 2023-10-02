@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    int maior = 0;
+    int row,column;
+    int matriz[4][4] = {
+        {6,20,32,4},
+        {55,11,24,9},
+        {3,30,26,9},
+        {12,2,14,7}};
+    for (int row = 0;row<4;row++){
+        for (int column = 0;column<4;column++){
+            if (matriz[row][column] > maior){
+                maior = matriz[row][column];
+            }
+        }
+        if (matriz[row][column]==maior){
+            printf("O maior valor está na linha %d e na coluna %d, ",row,column);
+        }
+    }
+    printf("e equivale a %d\n",maior);
+    return 0;
+}
