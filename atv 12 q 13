@@ -1,0 +1,30 @@
+//atv 12 q 13
+#include <stdio.h>
+int main(){
+    
+    printf("Matriz original:\n");
+    int matriz[4][4] = {
+        {3,4,1,13},
+        {9,5,12,17},
+        {14,2,6,11},
+        {7,10,8,16}};
+    for (int row = 0;row<4;row++){
+        for (int column = 0;column<4;column++){
+            printf("%d, ",matriz[row][column]);
+        }
+        printf("\n");
+    }
+    printf("Matriz triangular inferior:\n");
+    for (int row = 0;row<4;row++){
+        for (int column = 0;column<4;column++){
+            
+            if (row < column){
+                matriz[row][column] = 0;
+                printf("%d, ",matriz[row][column]);
+            } else{
+                printf("%d, ",matriz[row][column]);
+            }
+        }
+        printf("\n");
+    }
+}
