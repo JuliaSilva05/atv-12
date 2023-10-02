@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int matriz[3][4] = {
+        {43,20,32,4},
+        {55,11,54,9},
+        {12,2,14,7}};
+    for (int row = 0;row<3;row++){
+        for (int column = 0;column<4;column++){
+            int produto = row * column;
+            printf("%d, ",produto);
+        }
+        printf("\n");
+    }
+    return 0;
+}
