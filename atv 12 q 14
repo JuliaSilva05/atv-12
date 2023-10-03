@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    srand(time(NULL));
+    int matriz[5][5] = {
+        {43,20,32,4,1},
+        {55,11,54,9,19},
+        {75,13,14,29,6},
+        {65,12,8,49,28},
+        {12,2,15,7,32}};
+    for (int row = 0;row<5;row++){
+        for (int column = 0;column<5;column++){
+            printf("%d, ",matriz[row][column]);
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}
