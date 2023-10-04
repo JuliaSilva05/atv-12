@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    float matriz[10][3]={
+        {4.5,4,8},
+        {5,6.5,3},
+        {10,9.5,8},
+        {6.5,2.5,10},
+        {8.6,7.8,9.8},
+        {2.3,4.1,5.6},
+        {6.7,8.7,9.2},
+        {4.5,3.6,7.8},
+        {8.9,2.5,6.7},
+        {9.5,7.9,8}};
+    int primeiro = 2;
+    int segundo = 6;
+    int terceiro = 2;
+    printf("Numero de alunos cuja pior nota foi na prova 1: %d\n",primeiro);
+    printf("Numero de alunos cuja pior nota foi na prova 2: %d\n",segundo);
+    printf("Numero de alunos cuja pior nota foi na prova 3: %d\n",terceiro);
+    return 0;
+}
